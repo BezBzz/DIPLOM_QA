@@ -29,11 +29,11 @@
 
 **4.** Запустить целевой веб-сервис командой:
 
-     для mySQL: 
+    для mySQL: 
     java "-Dspring.datasource.url=jdbc:mysql://localhost:3306/app" -jar artifacts/aqa-shop.jar
 
-     для postgresgl:
-     java "-Dspring.datasource.url=jdbc:postgresql://localhost:5432/app" -jar artifacts/aqa-shop.jar
+    для postgresgl:
+    java "-Dspring.datasource.url=jdbc:postgresql://localhost:5432/app" -jar artifacts/aqa-shop.jar
 
 # Процедура запуска авто-тестов:
 

@@ -1,6 +1,14 @@
 plugins {
     id 'java'
     id "io.freefair.lombok" version "6.5.1"
+    id "io.qameta.allure" version "2.11.0"
+}
+
+allure {
+    version = '2.19.0'
+    useJUnit5 {
+        version = '2.19.0'
+    }
 }
 
 group 'ru.netology'
@@ -19,6 +27,11 @@ dependencies {
     testImplementation 'com.github.javafaker:javafaker:1.0.2'
     testImplementation 'mysql:mysql-connector-java:8.0.30'
     testImplementation 'org.postgresql:postgresql:42.5.0'
+    testImplementation 'commons-dbutils:commons-dbutils:1.7'
+
+    testImplementation 'io.qameta.allure:allure-selenide:2.19.0'
+    testImplementation 'io.qameta.allure:allure-rest-assured:2.19.0'
+    testImplementation 'io.qameta.allure:allure-junit5:2.19.0'
 }
 
 test {

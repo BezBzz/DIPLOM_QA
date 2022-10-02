@@ -2,29 +2,31 @@ package card;
 
 import com.github.javafaker.Faker;
 
+import java.time.LocalDate;
+
 public class CardFactory {
 
-    static String validNumber = "4444 4444 4444 4441";
-    static String invalidNumber = "4444 4444 4444 4442";
+    static String approvedNumber = "4444 4444 4444 4441";
+    static String declinedNumber = "4444 4444 4444 4442";
     static Faker f = new Faker();
 
-    public static Card getValidCard() {
+    public static Card getApprovedCard() {
         Card c = new Card();
-        c.setNumber(validNumber);
-        c.setMonth("12");
-        c.setYear("2022");
-        c.setHolder(f.name().fullName());
+        c.setNumber(approvedNumber);
+        c.setMonth(String.valueOf(LocalDate.now().getMonth().getValue()));
+        c.setYear(String.valueOf(LocalDate.now().getYear()).substring(2));
+        c.setOwner(f.name().fullName());
         c.setCvc(f.numerify("###"));
 
         return c;
     }
 
-    public static Card getInvalidCard() {
+    public static Card getDeclinedCard() {
         Card c = new Card();
-        c.setNumber(invalidNumber);
-        c.setMonth("12");
-        c.setYear("2022");
-        c.setHolder(f.name().fullName());
+        c.setNumber(declinedNumber);
+        c.setMonth(String.valueOf(LocalDate.now().getMonth().getValue()));
+        c.setYear(String.valueOf(LocalDate.now().getYear()).substring(2));
+        c.setOwner(f.name().fullName());
         c.setCvc(f.numerify("###"));
 
         return c;
