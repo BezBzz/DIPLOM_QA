@@ -58,10 +58,8 @@ public class ApiTest {
         SelenideLogger.removeListener("allure");
     }
 
-
     //    1. Отправка POST запроса платежа с валидно заполненным body и данными действующей карты на http://localhost:8080/payment
-//
-//    Ожидаемый результат: статус 200, появление соответствующей записей в БД
+    //    Ожидаемый результат: статус 200, появление соответствующей записей в БД
     @DisplayName("Отправка POST запроса платежа с валидно заполненным body и данными действующей карты")
     @Test
     public void checkPaymentValidCard() {
@@ -86,7 +84,6 @@ public class ApiTest {
         assertEquals(payments.get(0).getStatus().toLowerCase(), "approved");
         assertEquals(payments.get(0).getTransaction_id(), orders.get(0).getPayment_id());
         assertNull(orders.get(0).getCredit_id());
-
     }
 
     @DisplayName("Отправка POST запроса на кредит с валидно заполненным body и данными действующей карты")
@@ -113,7 +110,6 @@ public class ApiTest {
         assertEquals(credits.get(0).getStatus().toLowerCase(), "approved");
         assertEquals(credits.get(0).getBank_id(), orders.get(0).getPayment_id());
         assertEquals(credits.get(0).getId(), orders.get(0).getCredit_id());
-
     }
 
     @DisplayName("Отправка POST запроса платежа с валидно заполненным body и данными declined карты")
@@ -140,7 +136,6 @@ public class ApiTest {
         assertEquals(payments.get(0).getStatus().toLowerCase(), "declined");
         assertEquals(payments.get(0).getTransaction_id(), orders.get(0).getPayment_id());
         assertNull(orders.get(0).getCredit_id());
-
     }
 
     @DisplayName("Отправка POST запроса на кредит с валидно заполненным body и данными declined карты")
@@ -167,7 +162,6 @@ public class ApiTest {
         assertEquals(credits.get(0).getStatus().toLowerCase(), "declined");
         assertEquals(credits.get(0).getBank_id(), orders.get(0).getPayment_id());
         assertEquals(credits.get(0).getId(), orders.get(0).getCredit_id());
-
     }
 
     @DisplayName("Отправка POST запроса на платеж с пустым body")
@@ -187,7 +181,6 @@ public class ApiTest {
         assertEquals(0, payments.size());
         assertEquals(0, credits.size());
         assertEquals(0, orders.size());
-
     }
 
     @DisplayName("Отправка POST запроса на кредит с пустым body")
@@ -207,7 +200,6 @@ public class ApiTest {
         assertEquals(0, payments.size());
         assertEquals(0, credits.size());
         assertEquals(0, orders.size());
-
     }
 
     @DisplayName("Отправка POST запроса платежа с пустым значением у атрибута number в body (остальные данные заполнены валидно)")
@@ -230,7 +222,6 @@ public class ApiTest {
         assertEquals(0, payments.size());
         assertEquals(0, credits.size());
         assertEquals(0, orders.size());
-
     }
 
     @DisplayName("Отправка POST запроса на кредит с пустым значением у атрибута number в body (остальные данные заполнены валидно)")
@@ -253,7 +244,6 @@ public class ApiTest {
         assertEquals(0, payments.size());
         assertEquals(0, credits.size());
         assertEquals(0, orders.size());
-
     }
 
     @DisplayName("Отправка POST запроса платежа с пустым значением у атрибута month в body (остальные данные заполнены валидно)")
@@ -276,7 +266,6 @@ public class ApiTest {
         assertEquals(0, payments.size());
         assertEquals(0, credits.size());
         assertEquals(0, orders.size());
-
     }
 
     @DisplayName("Отправка POST запроса на кредит с пустым значением у атрибута month в body (остальные данные заполнены валидно)")
@@ -299,7 +288,6 @@ public class ApiTest {
         assertEquals(0, payments.size());
         assertEquals(0, credits.size());
         assertEquals(0, orders.size());
-
     }
 
     @DisplayName("Отправка POST запроса платежа с пустым значением у атрибута year в body (остальные данные заполнены валидно)")
@@ -322,7 +310,6 @@ public class ApiTest {
         assertEquals(0, payments.size());
         assertEquals(0, credits.size());
         assertEquals(0, orders.size());
-
     }
 
     @DisplayName("Отправка POST запроса на кредит с пустым значением у атрибута year в body (остальные данные заполнены валидно)")
@@ -345,9 +332,7 @@ public class ApiTest {
         assertEquals(0, payments.size());
         assertEquals(0, credits.size());
         assertEquals(0, orders.size());
-
     }
-
 
     @DisplayName("Отправка POST запроса платежа с пустым значением у атрибута holder в body (остальные данные заполнены валидно)")
     @Test
@@ -369,7 +354,6 @@ public class ApiTest {
         assertEquals(0, payments.size());
         assertEquals(0, credits.size());
         assertEquals(0, orders.size());
-
     }
 
     @DisplayName("Отправка POST запроса на кредит с пустым значением у атрибута holder в body (остальные данные заполнены валидно)")
@@ -392,9 +376,7 @@ public class ApiTest {
         assertEquals(0, payments.size());
         assertEquals(0, credits.size());
         assertEquals(0, orders.size());
-
     }
-
 
     @DisplayName("Отправка POST запроса платежа с пустым значением у атрибута cvc в body (остальные данные заполнены валидно)")
     @Test
@@ -416,7 +398,6 @@ public class ApiTest {
         assertEquals(0, payments.size());
         assertEquals(0, credits.size());
         assertEquals(0, orders.size());
-
     }
 
     @DisplayName("Отправка POST запроса на кредит с пустым значением у атрибута cvc в body (остальные данные заполнены валидно)")
@@ -439,8 +420,5 @@ public class ApiTest {
         assertEquals(0, payments.size());
         assertEquals(0, credits.size());
         assertEquals(0, orders.size());
-
     }
-
-
 }

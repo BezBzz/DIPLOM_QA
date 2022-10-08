@@ -39,5 +39,4 @@ public class DbUtil {
     public static List<OrderDto> getOrderQueryResult() {
         return r.query(c, "SELECT * FROM order_entity;", new BeanListHandler<>(OrderDto.class));
     }
-
 }

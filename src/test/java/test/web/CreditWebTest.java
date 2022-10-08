@@ -11,7 +11,6 @@ import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.*;
 import webpage.TripPage;
 import webpage.TripPageCreditForm;
-import webpage.TripPagePayForm;
 
 import java.util.List;
 
@@ -74,7 +73,6 @@ public class CreditWebTest {
                 () -> assertEquals("approved", credits.get(0).getStatus().toLowerCase()),
                 () -> assertEquals(credits.get(0).getBank_id(), orders.get(0).getPayment_id())
         );
-
     }
 
     @Test
@@ -98,7 +96,6 @@ public class CreditWebTest {
                 () -> assertEquals("declined", credits.get(0).getStatus().toLowerCase()),
                 () -> assertEquals(credits.get(0).getBank_id(), orders.get(0).getPayment_id())
         );
-
     }
 
     @Test
@@ -121,7 +118,6 @@ public class CreditWebTest {
                 () -> assertEquals("declined", credits.get(0).getStatus().toLowerCase()),
                 () -> assertEquals(credits.get(0).getBank_id(), orders.get(0).getCredit_id())
         );
-
     }
 
     @Test

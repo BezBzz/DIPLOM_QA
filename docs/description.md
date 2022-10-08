@@ -4,7 +4,7 @@
 
 Приложение представляет из себя веб-сервис.
 
-![](https://github.com/BezBzz/DIPLOM_QA/blob/master/pic/service.png)
+![](https://github.com/BezBzz/DIPLOM_QA/blob/master/docs/pic/service.png)
 
 Приложение предлагает купить тур по определённой цене с помощью двух способов:
 1. Обычная оплата по дебетовой карте

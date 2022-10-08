@@ -61,7 +61,6 @@ public class PayWebTest {
         assertEquals(45_000, payments.get(0).getAmount());
         assertEquals("approved", payments.get(0).getStatus().toLowerCase());
         assertEquals(payments.get(0).getTransaction_id(), orders.get(0).getPayment_id());
-
     }
 
     @Test
@@ -155,9 +154,8 @@ public class PayWebTest {
     }
 
     //    8. Значение поля "Месяц" пустое, все остальные поля формы валидные
-//
-//    Поле оставить пустым, во все остальные поля вводим валидные значения.
-//    Ожидаемый результат: отправка формы невозможна, предупреждение "Поле обязательно для заполнения" под полем "Месяц"
+    //    Поле оставить пустым, во все остальные поля вводим валидные значения.
+    //    Ожидаемый результат: отправка формы невозможна, предупреждение "Поле обязательно для заполнения" под полем "Месяц"
     @Test
     @DisplayName("Значение поля \"Месяц\" пустое, все остальные поля формы валидные")
     public void testPayWithEmptyMonthCardField() {
@@ -347,5 +345,4 @@ public class PayWebTest {
 
         payForm.ownerWrongFormatNotification();
     }
-
 }

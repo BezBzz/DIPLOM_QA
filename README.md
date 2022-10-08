@@ -17,6 +17,8 @@
 4. Git Bash
 5. Браузер
 
+ОБЯЗАТЕЛЬНО: выключить AdGuard, антивирус, закрыть TotalCommander.
+
 ## Подготовка среды перед тестированием:
 
 **1.** Склонировать в локальный репозиторий [Дипломный проект](https://github.com/BezBzz/DIPLOM_QA.git) и открыть его в IDE IntelliJ IDEA
@@ -58,3 +60,7 @@
 **2.** Для остановки работы контейнеров выполнить команду:
 
     docker-compose down
+
+### Дополнительные материалы:
+[Руководство по оформлению Markdown файлов](https://gist.github.com/Jekins/2bf2d0638163f1294637#Emphasis)
+[Методы assert](https://javarush.ru/quests/lectures/questservlets.level03.lecture05)

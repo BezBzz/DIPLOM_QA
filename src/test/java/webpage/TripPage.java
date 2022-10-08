@@ -26,5 +26,4 @@ public class TripPage {
         creditButton.click();
         return new TripPageCreditForm();
     }
-
 }
