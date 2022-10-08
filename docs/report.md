@@ -1,7 +1,7 @@
 # Отчет по итогам тестирования
 ---
 В ходе тестирования было автоматизировано 68 тест-кейсов
-![img.jpg](https://github.com/BezBzz/DIPLOM_QA/blob/master/docs/pic/repK.jpg)
+![img.jpg](https://github.com/BezBzz/DIPLOM_QA/blob/main/docs/pic/repK.jpg)
 Из них:
 
     - успешных оказалось 30 тест-кейсов (44%);
