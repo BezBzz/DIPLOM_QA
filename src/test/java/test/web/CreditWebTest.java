@@ -54,25 +54,14 @@ public class CreditWebTest {
         List<PayDto> payments = DbUtil.getPayQueryResult();
         List<CreditDto> credits = DbUtil.getCreditQueryResult();
 
-//        assertEquals(0, payments.size());
-//        assertEquals(1, credits.size());
-//        assertEquals(1, orders.size());
-//
-//        CreditDto credit = credits.get(0);
-//        OrderDto order = orders.get(0);
-//
-//        assertEquals(order.getCredit_id(), credit.getId());
-//        assertEquals("approved", credit.getStatus().toLowerCase());
-//        assertEquals(credit.getBank_id(), order.getPayment_id());
-
         assertAll(
                 () -> assertEquals(0, payments.size()),
                 () -> assertEquals(1, credits.size()),
                 () -> assertEquals(1, orders.size()),
                 () -> assertEquals(orders.get(0).getCredit_id(), credits.get(0).getId()),
-                () -> assertEquals("approved", credits.get(0).getStatus().toLowerCase()),
-                () -> assertEquals(credits.get(0).getBank_id(), orders.get(0).getPayment_id())
+                () -> assertEquals("approved", credits.get(0).getStatus().toLowerCase())
         );
+
     }
 
     @Test
@@ -93,9 +82,9 @@ public class CreditWebTest {
                 () -> assertEquals(1, credits.size()),
                 () -> assertEquals(1, orders.size()),
                 () -> assertEquals(orders.get(0).getCredit_id(), credits.get(0).getId()),
-                () -> assertEquals("declined", credits.get(0).getStatus().toLowerCase()),
-                () -> assertEquals(credits.get(0).getBank_id(), orders.get(0).getPayment_id())
+                () -> assertEquals("declined", credits.get(0).getStatus().toLowerCase())
         );
+
     }
 
     @Test
@@ -118,6 +107,7 @@ public class CreditWebTest {
                 () -> assertEquals("declined", credits.get(0).getStatus().toLowerCase()),
                 () -> assertEquals(credits.get(0).getBank_id(), orders.get(0).getCredit_id())
         );
+
     }
 
     @Test

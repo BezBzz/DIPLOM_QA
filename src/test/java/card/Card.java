@@ -10,4 +10,5 @@ public class Card {
     String year;
     String owner;
     String cvc;
+
 }

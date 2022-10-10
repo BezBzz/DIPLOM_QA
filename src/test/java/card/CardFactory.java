@@ -17,6 +17,7 @@ public class CardFactory {
                 String.valueOf(LocalDate.now().getYear()).substring(2),
                 f.name().fullName(),
                 f.numerify("###"));
+
         return c;
     }
 
@@ -26,6 +27,7 @@ public class CardFactory {
                 String.valueOf(LocalDate.now().getYear()).substring(2),
                 f.name().fullName(),
                 f.numerify("###"));
+
         return c;
     }
 
@@ -35,6 +37,7 @@ public class CardFactory {
                 String.valueOf(LocalDate.now().getYear()).substring(2),
                 f.name().fullName(),
                 f.numerify("###"));
+
         return c;
     }
 
@@ -44,6 +47,7 @@ public class CardFactory {
                 String.valueOf(LocalDate.now().getYear()).substring(2),
                 f.name().fullName(),
                 f.numerify("###"));
+
         return c;
     }
 
@@ -53,6 +57,7 @@ public class CardFactory {
                 String.valueOf(LocalDate.now().getYear()).substring(2),
                 f.name().fullName(),
                 f.numerify("###"));
+
         return c;
     }
 
@@ -62,6 +67,7 @@ public class CardFactory {
                 String.valueOf(LocalDate.now().getYear()).substring(2),
                 f.name().fullName(),
                 f.numerify("###"));
+
         return c;
     }
 
@@ -71,6 +77,7 @@ public class CardFactory {
                 String.valueOf(LocalDate.now().getYear()).substring(2),
                 f.name().fullName(),
                 f.numerify("###"));
+
         return c;
     }
 
@@ -80,6 +87,7 @@ public class CardFactory {
                 String.valueOf(LocalDate.now().getYear()).substring(2),
                 f.name().fullName(),
                 f.numerify("###"));
+
         return c;
     }
 
@@ -89,6 +97,7 @@ public class CardFactory {
                 String.valueOf(LocalDate.now().getYear()).substring(2),
                 f.name().fullName(),
                 f.numerify("###"));
+
         return c;
     }
 
@@ -98,6 +107,7 @@ public class CardFactory {
                 String.valueOf(LocalDate.now().getYear()).substring(2),
                 f.name().fullName(),
                 f.numerify("###"));
+
         return c;
     }
 
@@ -107,6 +117,7 @@ public class CardFactory {
                 String.valueOf(LocalDate.now().getYear()).substring(2),
                 f.name().fullName(),
                 f.numerify("###"));
+
         return c;
     }
 
@@ -116,6 +127,7 @@ public class CardFactory {
                 "",
                 f.name().fullName(),
                 f.numerify("###"));
+
         return c;
     }
 
@@ -125,6 +137,7 @@ public class CardFactory {
                 "00",
                 f.name().fullName(),
                 f.numerify("###"));
+
         return c;
     }
 
@@ -134,6 +147,7 @@ public class CardFactory {
                 String.valueOf(LocalDate.now().getYear() - 1).substring(2),
                 f.name().fullName(),
                 f.numerify("###"));
+
         return c;
     }
 
@@ -143,6 +157,7 @@ public class CardFactory {
                 String.valueOf(LocalDate.now().getYear() + 5).substring(2),
                 f.name().fullName(),
                 f.numerify("###"));
+
         return c;
     }
 
@@ -152,6 +167,7 @@ public class CardFactory {
                 String.valueOf(LocalDate.now().getYear()).substring(2),
                 f.name().fullName(),
                 "");
+
         return c;
     }
 
@@ -161,6 +177,7 @@ public class CardFactory {
                 String.valueOf(LocalDate.now().getYear()).substring(2),
                 f.name().fullName(),
                 f.numerify("#"));
+
         return c;
     }
 
@@ -170,6 +187,7 @@ public class CardFactory {
                 String.valueOf(LocalDate.now().getYear()).substring(2),
                 f.name().fullName(),
                 f.numerify("##"));
+
         return c;
     }
 
@@ -179,6 +197,7 @@ public class CardFactory {
                 String.valueOf(LocalDate.now().getYear()).substring(2),
                 f.name().fullName(),
                 "000");
+
         return c;
     }
 
@@ -188,6 +207,7 @@ public class CardFactory {
                 String.valueOf(LocalDate.now().getYear()).substring(2),
                 f.name().fullName().toUpperCase(),
                 f.numerify("###"));
+
         return c;
     }
 
@@ -197,6 +217,7 @@ public class CardFactory {
                 String.valueOf(LocalDate.now().getYear()).substring(2),
                 "NIKITA IVANOVS-PETROVS",
                 f.numerify("###"));
+
         return c;
     }
 
@@ -206,6 +227,7 @@ public class CardFactory {
                 String.valueOf(LocalDate.now().getYear()).substring(2),
                 "",
                 f.numerify("###"));
+
         return c;
     }
 
@@ -215,6 +237,7 @@ public class CardFactory {
                 String.valueOf(LocalDate.now().getYear()).substring(2),
                 f.name().lastName(),
                 f.numerify("###"));
+
         return c;
     }
 
@@ -224,6 +247,7 @@ public class CardFactory {
                 String.valueOf(LocalDate.now().getYear()).substring(2),
                 new Faker(new Locale("ru-RU")).name().fullName(),
                 f.numerify("###"));
+
         return c;
     }
 
@@ -233,6 +257,7 @@ public class CardFactory {
                 String.valueOf(LocalDate.now().getYear()).substring(2),
                 f.numerify("##### #########"),
                 f.numerify("###"));
+
         return c;
     }
 
@@ -242,6 +267,7 @@ public class CardFactory {
                 String.valueOf(LocalDate.now().getYear()).substring(2),
                 "%%%^^^  $#@**^!@#",
                 f.numerify("###"));
+
         return c;
     }
 }
